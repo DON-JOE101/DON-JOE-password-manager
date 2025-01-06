@@ -1,7 +1,7 @@
 #!/bin/python3
 
-""" 
-Password Manager
+'''
+Advanced Password Manager
 Author: DON-JOE
 
 Features:
@@ -9,7 +9,7 @@ Features:
 - Secure storage of passwords in an SQLite database
 - Encryption using the cryptography library
 - Random password generation
-"""
+'''
 
 import os
 import sqlite3
@@ -135,7 +135,7 @@ class PasswordManager:
 
 # Main interface function
 def main():
-    print("Welcome to DON-JOE's Advanced Password Manager!")
+    print("Welcome to DON-JOE's Password Manager!")
     key = load_key()
     encryptor = Encryptor(key)
     db = Database()
@@ -170,3 +170,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
